@@ -9,6 +9,142 @@
 }
 
 body {
-    background-color: #D2D8B3;
+    background-color: #9A8873;
     font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #EDF6F9;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #EDF6F9;
+    transition-duration: 1s;
+    display: block;
+    transition-timing-function: ease-in-out;
+}
+
+#menu {
+    display: none;
+}
+
+.memu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .navbar ul li a:hover {
+    font-size: 20px;
+    text-shadow: 0 0 10px #fff;
+    color: #EADDA6;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    margin-bottom: 35px;
+    line-height: 80px;
+    color: #FFFAE2;
+    text-shadow: 0 0 10px #EADDA6;
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
+}
+
+.header-content h1:hover {
+    opacity: 0.7;
+    filter: contrast(150%);
+}
+
+.header-content p {
+    color: #FFFAE2;
+    font-size: 20px;
+    animation-name: mover-parrafo-h1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    text-align: center;
+}
+
+/* para las acciones */
+
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translatex(100px);
+    }
+}
+
+@keyframes mover-parrafo-h1 {
+    from {
+        transform: translatey(0);
+    }
+
+    to {
+        transform: translatey(10px);
+    }
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #EADDA6;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition-duration: 2s;
+    border-radius: 4px;
+    color: #444;
+}
+
+.btn-1:hover {
+    font-size: 20px;
+    text-shadow: 0 0 10px #fff;
+    color: #433;
+    border-radius: 20px;
 }
