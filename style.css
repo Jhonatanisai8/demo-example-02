@@ -132,8 +132,11 @@ body {
 }
 
 .btn-1 {
-    display: inline-block;
+    display: block;
+    width: 200px;
+    text-align: center;
     background-color: #EADDA6;
+    margin: auto;
     margin-top: 20px;
     padding: 10px 20px;
     font-weight: 500;
